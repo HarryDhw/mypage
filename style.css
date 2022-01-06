@@ -7,7 +7,8 @@
 }
 
 body {
-    width: 70%;
+    max-width: 1200px;
+    padding: 0 20px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.8);
     color: snow;
@@ -62,8 +63,52 @@ h3 {
 .aboutme {
     margin: 50px auto;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .myself {
+    flex: 2 300px;
     line-height: 2rem;
+    margin: 0 20px;
+}
+
+.mepic {
+    flex: 1 300px;
+}
+.mepic img {
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 50%;
+    transition: transform 8s;
+}
+.mepic img:hover {
+    transform: rotate(360deg);
+}
+
+.myself h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#win95 img {
+    height: 3rem;
+}
+#win95p {
+    max-width: 600px;
+}
+
+#gamep img {
+    display: block;
+    max-width: 600px;
+    margin: 10px 0;
+}
+
+#dogp {
+    max-width: 600px;
+}
+
+#motop {
+    max-width: 600px;
 }
