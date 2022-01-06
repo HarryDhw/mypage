@@ -6,14 +6,11 @@
     padding: 0;
 }
 
-html {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: snow;
-}
-
 body {
     width: 70%;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: snow;
 }
 
 header {
@@ -32,7 +29,14 @@ ul li {
 
 a {
     text-decoration: none;
-    color: snow;
+    color: orange;
+    font-weight: bold;
+    transition: all 0.3s linear;
+}
+
+a:hover {
+    font-size: 1.2rem;
+    color: lightgreen;
 }
 
 h3 {
@@ -40,9 +44,26 @@ h3 {
 }
 
 #light {
-    padding: 5px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
     font-weight: bolder;
-    border:1px solid;
+    background-color: red;
+    color: white;
     margin-left: 5px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 1px black;
+}
+
+#light:hover {
+    background-color: rgb(253, 122, 0);
+}
+
+
+.aboutme {
+    margin: 50px auto;
+    width: 100%;
+}
+
+.myself {
+    line-height: 2rem;
 }
